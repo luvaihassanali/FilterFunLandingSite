@@ -18,7 +18,7 @@ function submitForm() {
   console.log(email)
   console.log(subject)
   console.log(message)
-  $.post("http://fiterfun.azurewebsites.net/messageForm",
+  $.post("https://filterfun.herokuapp.com/messageForm",
     {
       e: email,
       s: subject,
