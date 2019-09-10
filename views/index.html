@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Filter Fun</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./javascripts/index.js"></script>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Home</a>
+    <a href="/help">Support</a>
+    <a href="/policy">Policy</a>
+    <a href="javascript:void(0);" class="icon" onclick="mobileSwitch()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <br>
+  <div style="font-family:Thonburi" class="container-fluid">
+    <img src="./images/icon.png" alt="App Icon" style="padding-bottom: 15px; max-width:450px; width:100%;height:auto;">
+    <h1 style="display: inline; font-size:8vw">Filter Fun</h1>
+    <hr>
+    <p style="font-size:4vw">Camera application with extra features!</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <video controls preload="metadata" style="width:100%;">
+          <source src="./videos/main.mp4#t=0.2" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <br>
+        <br>
+        <img src="./images/info.jpg" alt="Info" style="width:100%;height:auto;">
+      </div>
+      <br>
+      <div class="col-sm-8">
+        <table style="width:99%">
+          <tr>
+            <td><img src="./images/filterex1.jpg" alt="Example0" style="width:100%;height:auto;"></td>
+            <td><img src="./images/filterex2.jpg" alt="Example1" style="width:100%;height:auto;"></td>
+            <td><img src="./images/filterex3.jpg" alt="Example2" style="width:100%;height:auto;"></td>
+          </tr>
+        </table>
+        <h1>Example videos (XS)</h1>
+        <table style="width:100%">
+          <tr>
+            <td>
+              <p>Orange World Filter</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/1.mp4#t=0.5" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+            <td>
+              <p>Unfiltered video</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/regular.mp4#t=7" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Static Effect Filter</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/3.mp4#t=0.5" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+            <td>
+              <p>Comic Effect Filter</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/4.mp4#t=8" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+

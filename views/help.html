@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Filter Fun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./javascripts/index.js"></script>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="/">Home</a>
+    <a href="/help" class="active">Support</a>
+    <a href="/policy">Policy</a>
+    <a href="javascript:void(0);" class="icon" onclick="mobileSwitch()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div style="padding-right: 16px; padding-left:16px">
+    <h2>Support</h2>
+    <hr>
+    <p>Read opening message carefully to understand application's limitations. The removal/distortion of audio in
+      restuling videos is hardware based. I tested this app using iPhone XS and know that Static Effect
+      and Comic Effect filters removes audio completely. Testing on older phones such as the SE reveal that most filters
+      cannot record with audio. The camera can still function regularly and while outputting audio from other apps
+      however. Photo and video quality is set to highest available preset on the phone but video writing is specifically set to
+      720x1280 resolution and photo quality outputs lower than usual due to internal methods required for applying
+      filters. The application uses resources heavily and will trigger warnings when phone system pressure is elevated (heat is indicator). Heed the warnings; I am not responsible for any damages. More information can be found here at <a href="https://developer.apple.com/documentation/avfoundation/avcapturedevice/systempressurestate"
+      target="_blank">Apple's developer documentation</a>. </p>
+    <br>
+    <form onsubmit="submitForm()" action="javascript:void(0);">
+      <label for="exampleInputEmail1">Email address:</label>
+      <input id="emailForm" class="form-control" type="email" placeholder="Enter valid email address" required /> 
+      <br>
+      <label>Subject:</label>
+      <input id="subjectLine" class="form-control" type="text" placeholder="Subject line" required /> 
+      <br>
+      <label>Message:</label>
+      <textarea height="500px" required id="messageBody" class="form-control" placeholder="Leave a comment, complaint, bug, etc."></textarea>
+      <br>
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <br>
+    </form>
+  </div>
+</body>
+</div>
+</html>
