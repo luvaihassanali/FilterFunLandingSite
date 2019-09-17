@@ -6,10 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+  <script src="./javascripts/jquery.min.js"></script>
+  <script src="./javascripts/bootstrap.min.js"></script>
   <script src="./javascripts/index.js"></script>
   <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
 </head>
@@ -25,9 +24,9 @@
     </a>
   </div>
   <br>
-  <div style="font-family:Thonburi" class="container-fluid">
-    <img src="./images/icon.png" alt="App Icon" style="padding-bottom: 15px; max-width:450px; width:100%;height:auto;">
-    <h1 style="display: inline; font-size:8vw">Filter Fun</h1>
+  <div class="container-fluid">
+    <img src="./images/icon.jpg" alt="App Icon" style="padding-bottom: 15px; max-width:450px; width:100%;height:auto;">
+    <h2 style="display: inline; font-size:8vw">Filter Fun</h2>
     <hr>
     <p style="font-size:4vw">Camera application with extra features!</p>
     <div class="row">
@@ -63,6 +62,22 @@
               <p>Unfiltered video</p>
               <video controls preload="metadata" style="width:100%;">
                 <source src="./videos/regular.mp4#t=7" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Hue Filter</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/hue.mp4#t=0.5" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+            <td>
+              <p>Kaleidoscope Filter</p>
+              <video controls preload="metadata" style="width:100%;">
+                <source src="./videos/kaled.mp4#t=8" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </td>

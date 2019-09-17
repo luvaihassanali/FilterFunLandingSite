@@ -1,13 +1,8 @@
-/*@font-face {
-  font-family: Thonburi;
-  src: url('Thonburi.ttc');
-}*/
-@import url('https://www.fontify.me/wf/aa80742427c447587a0239a8a19594e5');
 body{
-font-family: font80745;
+  font-family: 'Tahoma', Geneva, sans-serif;
   margin: 0;
   background-color: #fcfcfc;
-  /*font-family: Thonburi;*/
+  color: #000 !important;
 }
 
 /*textarea.form-control {
@@ -27,7 +22,7 @@ font-family: font80745;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-  font-family: Thonburi;
+  font-family: 'Tahoma', Geneva, sans-serif;
 }
 
 .topnav a:hover {

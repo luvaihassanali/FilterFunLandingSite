@@ -6,10 +6,9 @@
   <title>Filter Fun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+  <script src="./javascripts/jquery.min.js"></script>
+  <script src="./javascripts/bootstrap.min.js"></script>
   <script src="./javascripts/index.js"></script>
   <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
 </head>
@@ -35,6 +34,29 @@
       720x1280 resolution and photo quality outputs lower than usual due to internal methods required for applying
       filters. The application uses resources heavily and will trigger warnings when phone system pressure is elevated (heat is indicator). Heed the warnings; I am not responsible for any damages. More information can be found here at <a href="https://developer.apple.com/documentation/avfoundation/avcapturedevice/systempressurestate"
       target="_blank">Apple's developer documentation</a>. </p>
+    <table style="width:100%;">
+      <caption>iPhone Compatibility (in progress)</caption>
+      <tr>
+        <th>Version</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>iPhone XS</td>
+        <td>Everything - no sound on Comic Filter and Static Filter</td>
+      </tr>
+      <tr>
+        <td>iPhone 7</td>
+        <td>Everything - no sound on Comic Filter and Static Filter (inconclusive)</td>
+      </tr>
+      <tr>
+        <td>iPhone 6S</td>
+        <td>No sound on video except for when front-facing</td>
+      </tr>
+      <tr>
+        <td>iPhone SE</td>
+        <td>Video records - no sound (inconclusive)</td>
+      </tr>
+    </table>
     <br>
     <form onsubmit="submitForm()" action="javascript:void(0);">
       <label for="exampleInputEmail1">Email address:</label>

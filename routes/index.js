@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var visitorshome = 0;
+var visitorshelp = 0;
+var visitorspolicy = 0;
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -12,14 +15,20 @@ var transporter = nodemailer.createTransport({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  visitorshome++;
+  console.log("\n----- visitors home: " + visitorshome + " -----\n");
   res.render('index');
 });
 
 router.get('/help', function(req, res, next) {
+  visitorshelp++;
+  console.log("\n----- visitors help: " + visitorshelp + " -----\n");
   res.render('help');
 });
 
 router.get('/policy', function(req, res, next) {
+  visitorspolicy++;
+  console.log("\n----- visitors policy: " + visitorspolicy + " -----\n");
   res.render('policy');
 });
 
