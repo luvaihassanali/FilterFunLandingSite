@@ -1,3 +1,4 @@
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function mobileSwitch() {
   var x = document.getElementById("myTopnav");
@@ -15,9 +16,6 @@ function submitForm() {
   document.getElementById("emailForm").value = "";
   document.getElementById("messageBody").value = "";
   document.getElementById("subjectLine").value = "";
-  console.log(email)
-  console.log(subject)
-  console.log(message)
   $.post("https://filterfun.fun/messageForm",
     {
       e: email,

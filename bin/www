@@ -7,7 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('landingsite:server');
 var https = require('https');
-var fs = require('fs')
+//var http = require('http');
+var fs = require('fs');
 /**
  * Get port from environment and store in Express.
  */
@@ -20,16 +21,17 @@ app.set('port', port);
  */
 
 var server = https.createServer({
-key: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/privkey.pem'),
-cert: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/cert.pem'),
-ca:  fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/chain.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/cert.pem'),
+  ca: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/chain.pem')
 }, app);
 
+//var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port, "0.0.0.0");
+server.listen(port, "0.0.0.0"); //port, "0.0.0.0" //process.env.PORT || 3000
 server.on('error', onError);
 server.on('listening', onListening);
 

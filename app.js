@@ -6,13 +6,19 @@ var logger = require('morgan');
 var cors = require('cors');
 var helmet = require('helmet');
 var Ddos = require('ddos');
-var ddos = new Ddos({burst: 50, limit:300});
+//var ddos = new Ddos({burst: 15, limit:300});
+var expectCt = require('expect-ct');
+var compression = require('compression');
+
 var indexRouter = require('./routes/index');
 
 var app = express();
-app.use(ddos.express);
+app.use(compression());
+//app.use(ddos.express);
 app.use(helmet());
+app.use(expectCt({enforce: true, maxAge:604800}));
 app.use(cors());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -22,7 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'), {
-    dotfiles: 'allow'
+    maxAge: "30d"
 }));
 
 app.use('/', indexRouter);

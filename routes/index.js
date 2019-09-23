@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var visitorshome = 0;
-var visitorshelp = 0;
+var visitorssupport = 0;
 var visitorspolicy = 0;
 
 var transporter = nodemailer.createTransport({
@@ -20,10 +20,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/help', function(req, res, next) {
-  visitorshelp++;
-  console.log("\n----- visitors help: " + visitorshelp + " -----\n");
-  res.render('help');
+router.get('/support', function(req, res, next) {
+  visitorssupport++;
+  console.log("\n----- visitors support: " + visitorssupport + " -----\n");
+  res.render('support');
 });
 
 router.get('/policy', function(req, res, next) {
