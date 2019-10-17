@@ -5,15 +5,33 @@
   <title>Filter Fun - Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Record video with music from another app playing and apply filters to videos using Filter Fun!">
+  <meta name="description"
+    content="Record video with music from another app playing and apply filters to videos using Filter Fun!">
   <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" type="text/css">
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
-  <style>
+  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  <style nonce="2726c7f26d">
     body {
       font-family: 'Tahoma', Geneva, sans-serif;
       margin: 0;
       background-color: #fcfcfc;
       color: #000 !important;
+    }
+
+    p {
+      font-size: 5vw;
+    }
+
+    .footie {
+      font-size: 1.5vw !important;
+    }
+
+    .mainh {
+      display: inline;
+      font-size: 13vw;
+    }
+
+    table {
+      width: 100%;
     }
 
     .topnav {
@@ -45,6 +63,7 @@
     .topnav .icon {
       display: none;
     }
+
     @font-face {
       font-family: 'FontAwesome';
       src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -52,6 +71,7 @@
       font-weight: normal;
       font-style: normal;
     }
+
     .fa {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -60,16 +80,20 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
     .fa-bars:before {
       content: "\f0c9";
     }
+
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {
         display: none;
       }
+
       .topnav a:first-child {
         font-size: 5vw;
       }
+
       .topnav a.icon {
         float: right;
         display: block;
@@ -92,52 +116,55 @@
         text-align: left;
         font-size: 5vw;
       }
+
       .topnav a.active {
         background-color: #2E95FC;
         color: white;
-      }
-      p {
-        font-size: 5vw !important;
       }
     }
   </style>
 </head>
 
 <body>
-
+  <script src="./javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="./javascripts/jquery.lazy.min.js" type="text/javascript"></script>
+  <script src="./javascripts/jquery.lazy.youtube.min.js" type="text/javascript"></script>
+  <script nonce="2726c7f26c">
+    $(function () {
+      $("iframe[data-src]").Lazy();
+    });
+  </script>
   <div class="topnav" id="myTopnav">
     <a href="/" class="active">Home</a>
     <a href="/support">Support</a>
     <a href="/policy">Policy</a>
-    <a href="javascript:void(0);" class="icon" onclick="mobileSwitch()">
+    <a id="mobileicon" class="icon">
       <i class="fa fa-bars"></i>
     </a>
   </div>
   <br>
   <div class="container-fluid">
-    <!--<img src="./images/icon.png" alt="App Icon" style="padding-bottom: 15px; max-width:32vw; height:auto;">-->
     <picture>
       <source srcset="/images/icon/icon820.png" media="(min-width: 2400px)" />
       <source srcset="/images/icon/icon600.png" media="(min-width: 1800px)" />
       <source srcset="/images/icon/icon460.png" media="(min-width: 1200px)" />
       <source srcset="/images/icon/icon327.png" media="(min-width: 1000px)" />
       <source srcset="/images/icon/icon245.png" media="(min-width: 600px)" />
-      <source srcset="/images/icon/icon132.png" media="(min-width: 400px)" />
-      <source srcset="/images/icon/icon120.png" media="(min-width: 330px)" />
-      <img alt="App Icon" src="/images/icon/icon99.png" />
+      <source srcset="/images/icon/icon132.png" media="(min-width: 415px)" />
+      <source srcset="/images/icon/icon120.png" media="(min-width: 375px)" />
+      <source srcset="/images/icon/icon94.png" media="(min-width: 320px)" />
+      <img alt="App Icon" src="/images/icon/icon94.png" />
     </picture>
-    <h1 style="display: inline; font-size:13vw">&nbsp;Filter Fun</h1>
+    <h1 class="mainh">&nbsp;Filter Fun</h1>
     <hr>
-    <p style="font-size:5vw">Camera application with extra features!</p>
+    <p>Camera application with extra features!</p>
     <div class="row">
       <div class="col-sm-4">
-        <video class="rightside" controls preload="metadata" style="width:100%;">
-          <source src="./videos/main.mp4#t=0.01" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <iframe data-loader="youtube" data-src="1vlo0xA0zBk?mute=1" data-nocookie="1" width="100%" height="700"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
         <br>
         <br>
-        <!--<img class="rightside" src="./images/info.jpg" alt="Info" style="width:100%;height:auto;">-->
         <picture>
           <source srcset="/images/info/info823.jpg" media="(min-width: 2400px)" />
           <source srcset="/images/info/info595.jpg" media="(min-width: 1800px)" />
@@ -151,7 +178,6 @@
       </div>
       <br>
       <div class="col-sm-8">
-        <!--<img src="./images/3panel.jpg" alt="3 panel example" style="width:100%; height: auto;">-->
         <picture alt="3 panel example">
           <source srcset="/images/3panel/3panel1676.jpg" media="(min-width: 2400px)" />
           <source srcset="/images/3panel/3panel1221.jpg" media="(min-width: 1800px)" />
@@ -163,76 +189,86 @@
           <img alt="3 panel example" src="/images/3panel/3panel290.jpg" />
         </picture>
         <h1>Example videos (XS)</h1>
-        <table style="width:100%">
+        <table>
           <tr>
             <td>
-              <p>Orange World Filter</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/orangeWorld.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Mono Color</p>-->
+              <iframe data-loader="youtube" data-src="xTT1bKEjkNM?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
             <td>
-              <p>Unfiltered video</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/regularNoSound.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Comic Effect 2</p>-->
+              <iframe data-loader="youtube" data-src="aUwvIJ1_Pxc?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </td>
+            <td>
+              <!--<p>Under the Sea</p>-->
+              <iframe data-loader="youtube" data-src="ESMPB5zm7O8?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
           </tr>
           <tr>
             <td>
-              <p>Hue Filter</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/hue.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Kaleidoscope</p>-->
+              <iframe data-loader="youtube" data-src="JxGI7eAbodc?mute=" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
             <td>
-              <p>Kaleidoscope Filter</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/kalEffect.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Ray Gunt</p>-->
+              <iframe data-loader="youtube" data-src="xtSl1_bjrXU?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </td>
+            <td>
+              <!--<p>Static Effect</p>-->
+              <iframe data-loader="youtube" data-src="7G7jqeH5aSs?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
           </tr>
           <tr>
             <td>
-              <p>Static Effect Filter</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/staticEffect.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Hue Control</p>-->
+              <iframe data-loader="youtube" data-src="1F82pJcy2zw?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
             <td>
-              <p>Comic Effect Filter</p>
-              <video controls preload="metadata" style="width:100%;">
-                <source src="./videos/comicEffect.mp4#t=0.01" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <!--<p>Comic Effect</p>-->
+              <iframe data-loader="youtube" data-src="dPHQ40nGqwE?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </td>
+            <td>
+              <!--<p>No filter</p>-->
+              <iframe data-loader="youtube" data-src="a8RX4FlnK_k?mute=1" data-nocookie="1" width="100%" height="355"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </td>
           </tr>
         </table>
         <h1>Other examples</h1>
-        <!--<img src="./images/12panel.jpg" alt="12 panel example" class="twelvepanel" style="width:100%; height: auto;">-->
-        <picture alt="12 panel example">
-          <source srcset="/images/12panel/12panel1676.jpg" media="(min-width: 2400px)" />
-          <source srcset="/images/12panel/12panel1221.jpg" media="(min-width: 1800px)" />
-          <source srcset="/images/12panel/12panel930.jpg" media="(min-width: 1200px)" />
-          <source srcset="/images/12panel/12panel652.jpg" media="(min-width: 1000px)" />
-          <source srcset="/images/12panel/12panel482.jpg" media="(min-width: 600px)" />
-          <source srcset="/images/12panel/12panel384.jpg" media="(min-width: 400px)" />
-          <source srcset="/images/12panel/12panel345.jpg" media="(min-width: 330px)" />
-          <img alt="12 panel example" src="/images/12panel/12panel290.jpg" />
+        <picture>
+          <source srcset="/images/15panel/15panel1676.jpg" media="(min-width: 2400px)" />
+          <source srcset="/images/15panel/15panel1221.jpg" media="(min-width: 1800px)" />
+          <source srcset="/images/15panel/15panel930.jpg" media="(min-width: 1200px)" />
+          <source srcset="/images/15panel/15panel652.jpg" media="(min-width: 1000px)" />
+          <source srcset="/images/15panel/15panel482.jpg" media="(min-width: 600px)" />
+          <source srcset="/images/15panel/15panel384.jpg" media="(min-width: 400px)" />
+          <source srcset="/images/15panel/15panel345.jpg" media="(min-width: 330px)" />
+          <img alt="15 panel example" data-src="/images/15panel/15panel290.jpg" />
         </picture>
       </div>
     </div>
-      <br>
-      <footer id="footer">
-        <p>© 2019 Luvai Hassanali</p>
-      </footer>
+    <br>
+    <footer id="footer">
+      <p class="footie">© 2019 Luvai Hassanali</p>
+    </footer>
   </div>
-  <script src="./javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="./javascripts/bootstrap.min.js" type="text/javascript"></script>
   <script src="./javascripts/index.js" type="text/javascript"></script>
 </body>

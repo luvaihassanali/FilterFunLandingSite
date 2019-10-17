@@ -32,6 +32,15 @@ router.get('/policy', function(req, res, next) {
   res.render('policy');
 });
 
+router.post('/report-violation', (req, res) => {
+  if (req.body) {
+    console.log('CSP Violation: ', req.body)
+  } else {
+    console.log('CSP Violation: No data received!')
+  }
+  res.status(204).end()
+})
+
 router.post('/messageForm',function(req, res, next){
   var email=req.body.e;
   var subject= req.body.s;

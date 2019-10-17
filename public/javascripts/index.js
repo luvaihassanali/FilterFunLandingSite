@@ -1,5 +1,11 @@
+$(function () {
+  $("#mobileicon").click(mobileSwitch);
+  $("#myform").submit(function (e) {
+    e.preventDefault();
+    submitForm();
+  });
+});
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function mobileSwitch() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -7,6 +13,7 @@ function mobileSwitch() {
   } else {
     x.className = "topnav";
   }
+  return false;
 }
 
 function submitForm() {
@@ -23,6 +30,7 @@ function submitForm() {
       m: message
     },
     function (data, status) {
+      console.log(data);
       alert(data);
     });
 }

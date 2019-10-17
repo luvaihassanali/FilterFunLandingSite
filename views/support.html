@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Support page for Filter Fun detailing phone compatibility for application.">
   <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" type="text/css">
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
-  <style>
+  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  <style  nonce="2726c7f26d">
     body {
       font-family: 'Tahoma', Geneva, sans-serif;
       margin: 0;
@@ -16,6 +16,21 @@
       color: #000 !important;
     }
 
+      .pad {
+         padding-right: 16px; 
+         padding-left:16px;
+      }
+      .yes {
+        color: transparent;
+        text-shadow: 0 0 0 rgb(0, 128, 0);
+      }
+      .no {
+        color: transparent; 
+        text-shadow: 0 0 0 rgb(128, 0, 0);
+      }
+     .greycolor {
+      color:#808080;
+     }
     p {
       font-size: 1.5vw
     }
@@ -189,16 +204,17 @@
 </head>
 
 <body>
+ 
   <div class="topnav" id="myTopnav">
     <a href="/">Home</a>
     <a href="/support" class="active">Support</a>
     <a href="/policy">Policy</a>
-    <a href="javascript:void(0);" class="icon" onclick="mobileSwitch()">
+    <a id="mobileicon" class="icon">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-
-  <div style="padding-right: 16px; padding-left:16px">
+ 
+  <div class="pad">
     <h1>Support</h1>
     <hr>
     <p>Read the opening message carefully to understand application's limitations. The removal/distortion of audio in
@@ -218,11 +234,12 @@
     </p>
     <p>
       For all versions:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Results will vary depending on phone status (number of apps open, running time, etc.)<br>
       &nbsp;&nbsp;&nbsp;&nbsp;• No audio when recording with either Comic Effect or Static Effect filters<br>
       &nbsp;&nbsp;&nbsp;&nbsp;• Cannot take still pictures while on Static Effect<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;• Kaleidoscope filter may not be centered on iPhones with screens smaller
+      &nbsp;&nbsp;&nbsp;&nbsp;• Kaleidoscope and Bump Distortion filter may not be centered on iPhones (8 and lower) with screens smaller or iPads
       <hr>
-      <form onsubmit="submitForm()" action="javascript:void(0);">
+      <form id="myform">
         <label for="emailForm">Email address:</label>
         <input id="emailForm" class="form-control" type="email" placeholder="Enter valid email address" required />
         <br>
@@ -238,9 +255,100 @@
       </form>
       <hr>
       <h2>Sound Output Details (in progress)</h2><br>
-      <i style="color:#808080">Swipe chart on mobile</i>
+      <i class="greycolor">Swipe chart on mobile</i>
     </p>
-    
+      <div class="table-responsive">
+      <table class="table table-bordered table-striped table-condensed">
+      <caption><p><strong>iPad Air 2</strong></p></caption>
+        <tbody>
+          <tr>
+            <th>Filter</th>
+            <td>Off</td>
+            <td>Noir</td>
+            <td>Comic Effect</td>
+            <td>Sephia Tone</td>
+            <td>Rose Effect</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
+            <td>Pixellate</td>
+            <td>H. Pixellate</td>
+            <td>Posterize</td>
+            <td>B. Distortion</td>
+            <td>Static Effect</td>
+            <td>Neon Edges</td>
+            <td>Gamma Effect</td>
+            <td>Temp.</td>
+            <td>Exposure</td>
+            <td>Hue Control</td>
+            <td>Kaleidoscope</td>
+            <td>Ghost</td>
+          </tr>
+          <tr>
+            <th>Main Camera</th>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+          </tr>
+          <tr>
+            <th>Selfie Camera</th>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <div class="table-responsive">
       <table class="table table-bordered table-striped table-condensed">
       <caption><p><strong>XS</strong></p></caption>
@@ -252,76 +360,91 @@
             <td>Comic Effect</td>
             <td>Sephia Tone</td>
             <td>Rose Effect</td>
-            <td>Color Invert</td>
-            <td>Spotlight</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
             <td>Pixellate</td>
             <td>H. Pixellate</td>
-            <td>Orange World</td>
-            <td>Feeling Blue</td>
-            <td>Color Posterize</td>
+            <td>Posterize</td>
             <td>B. Distortion</td>
             <td>Static Effect</td>
             <td>Neon Edges</td>
             <td>Gamma Effect</td>
-            <td>Temperature</td>
+            <td>Temp.</td>
             <td>Exposure</td>
             <td>Hue Control</td>
             <td>Kaleidoscope</td>
+            <td>Ghost</td>
           </tr>
           <tr>
             <th>Main Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
           </tr>
           <tr>
             <th>Selfie Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
           </tr>
         </tbody>
       </table>
     </div>
     
-    <div class="table-responsive">
+   <!-- <div class="table-responsive">
       <table class="table table-bordered table-striped table-condensed"> 
       <caption><p><strong>8 Plus</strong> (inconclusive)</p></caption>
-        <tbody>
+  <tbody>
           <tr>
             <th>Filter</th>
             <td>Off</td>
@@ -329,76 +452,91 @@
             <td>Comic Effect</td>
             <td>Sephia Tone</td>
             <td>Rose Effect</td>
-            <td>Color Invert</td>
-            <td>Spotlight</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
             <td>Pixellate</td>
             <td>H. Pixellate</td>
-            <td>Orange World</td>
-            <td>Feeling Blue</td>
-            <td>Color Posterize</td>
+            <td>Posterize</td>
             <td>B. Distortion</td>
             <td>Static Effect</td>
             <td>Neon Edges</td>
             <td>Gamma Effect</td>
-            <td>Temperature</td>
+            <td>Temp.</td>
             <td>Exposure</td>
             <td>Hue Control</td>
             <td>Kaleidoscope</td>
+            <td>Ghost</td>
           </tr>
           <tr>
             <th>Main Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
           </tr>
           <tr>
             <th>Selfie Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </div>-->
     
     <div class="table-responsive">
       <table class="table table-bordered table-striped table-condensed">
-      <caption><p><strong>7</strong> (inconclusive)</p></caption>
-        <tbody>
+      <caption><p><strong>8</strong></p></caption>
+  <tbody>
           <tr>
             <th>Filter</th>
             <td>Off</td>
@@ -406,67 +544,82 @@
             <td>Comic Effect</td>
             <td>Sephia Tone</td>
             <td>Rose Effect</td>
-            <td>Color Invert</td>
-            <td>Spotlight</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
             <td>Pixellate</td>
             <td>H. Pixellate</td>
-            <td>Orange World</td>
-            <td>Feeling Blue</td>
-            <td>Color Posterize</td>
+            <td>Posterize</td>
             <td>B. Distortion</td>
             <td>Static Effect</td>
             <td>Neon Edges</td>
             <td>Gamma Effect</td>
-            <td>Temperature</td>
+            <td>Temp.</td>
             <td>Exposure</td>
             <td>Hue Control</td>
             <td>Kaleidoscope</td>
+            <td>Ghost</td>
           </tr>
           <tr>
             <th>Main Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
           </tr>
           <tr>
             <th>Selfie Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
           </tr>
         </tbody>
       </table>
@@ -483,67 +636,82 @@
             <td>Comic Effect</td>
             <td>Sephia Tone</td>
             <td>Rose Effect</td>
-            <td>Color Invert</td>
-            <td>Spotlight</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
             <td>Pixellate</td>
             <td>H. Pixellate</td>
-            <td>Orange World</td>
-            <td>Feeling Blue</td>
-            <td>Color Posterize</td>
+            <td>Posterize</td>
             <td>B. Distortion</td>
             <td>Static Effect</td>
             <td>Neon Edges</td>
             <td>Gamma Effect</td>
-            <td>Temperature</td>
+            <td>Temp.</td>
             <td>Exposure</td>
             <td>Hue Control</td>
             <td>Kaleidoscope</td>
+            <td>Ghost</td>
           </tr>
           <tr>
             <th>Main Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
           </tr>
           <tr>
             <th>Selfie Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
           </tr>
         </tbody>
       </table>
@@ -560,74 +728,88 @@
             <td>Comic Effect</td>
             <td>Sephia Tone</td>
             <td>Rose Effect</td>
-            <td>Color Invert</td>
-            <td>Spotlight</td>
+            <td>Invert</td>
+            <td>Color Map</td>
+            <td>Ray Gun</td>
+            <td>Feeling Blue</td>
+            <td>Under the Sea</td>
+            <td>Thermal</td>
+            <td>X-Ray</td>
+            <td>Mono Color</td>
             <td>Pixellate</td>
             <td>H. Pixellate</td>
-            <td>Orange World</td>
-            <td>Feeling Blue</td>
-            <td>Color Posterize</td>
+            <td>Posterize</td>
             <td>B. Distortion</td>
             <td>Static Effect</td>
             <td>Neon Edges</td>
             <td>Gamma Effect</td>
-            <td>Temperature</td>
+            <td>Temp.</td>
             <td>Exposure</td>
             <td>Hue Control</td>
             <td>Kaleidoscope</td>
+            <td>Ghost</td>
           </tr>
           <tr>
             <th>Main Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
+            <td class = "no">✖</td>
           </tr>
           <tr>
             <th>Selfie Camera</th>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(128, 0, 0);">✖</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
-            <td style="color: transparent; text-shadow: 0 0 0 rgb(0, 128, 0);">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "no">✖</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
+            <td class = "yes">✔</td>
           </tr>
         </tbody>
       </table>
     </div>
     <hr>
     <h2 id="warning">System Pressure Warning</h2><br>
-    <!--<img style="max-width: 30vw;" src="./images/warning.jpg">-->
       <picture>
         <source srcset="/images/warning/warning798.jpg" media="(min-width: 2400px)" />
         <source srcset="/images/warning/warning453.jpg" media="(min-width: 1200px)" />
@@ -642,7 +824,7 @@
   </div>
   <script src="./javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="./javascripts/bootstrap.min.js" type="text/javascript"></script>
-  <script src="./javascripts/index.js"></script>
+  <script src="./javascripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>
