@@ -6,27 +6,28 @@
 
 var app = require('../app');
 var debug = require('debug')('landingsite:server');
-var https = require('https');
-//var http = require('http');
+//var https = require('https');
+var http = require('http');
 var fs = require('fs');
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '443');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = https.createServer({
+/*var server = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/cert.pem'),
   ca: fs.readFileSync('/etc/letsencrypt/live/filterfun.fun/chain.pem')
-}, app);
+}, app);*/
 
-//var server = http.createServer(app);
+var server = http.createServer(app);
+
 /**
  * Listen on provided port, on all network interfaces.
  */
