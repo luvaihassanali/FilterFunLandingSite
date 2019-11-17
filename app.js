@@ -14,7 +14,7 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 app.use(compression());
-app.use(ddos.express);
+//app.use(ddos.express);
 app.use(helmet());
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
 app.use(helmet.featurePolicy({
