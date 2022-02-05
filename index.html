@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Record video with music from another app playing and apply filters to videos using Filter Fun!">
-  <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" type="text/css">
-  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  <link rel="stylesheet" href="./public/stylesheets/bootstrap.min.css" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="./public/favicon.ico" />
   <style nonce="2726c7f26d">
     @font-face {
       font-family: 'Thonburi';
-      src: url('../fonts/Thonburi.eot'); /* IE9 Compat Modes */
-      src: url('../fonts/Thonburi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/Thonburi.woff') format('woff'), /* Modern Browsers */
-        url('../fonts/Thonburi.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/Thonburi.svg#svgFontName') format('svg'); /* Legacy iOS */
+      src: url('./public/fonts/Thonburi.eot'); /* IE9 Compat Modes */
+      src: url('./public/fonts/Thonburi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./public/fonts/Thonburi.woff') format('woff'), /* Modern Browsers */
+        url('./public/fonts/Thonburi.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('./public/fonts/Thonburi.svg#svgFontName') format('svg'); /* Legacy iOS */
     }
     body {
       font-family: Thonburi;
@@ -78,8 +78,8 @@
 
     @font-face {
       font-family: 'FontAwesome';
-      src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-      src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+      src: url('./public/fonts/fontawesome-webfont.eot?v=4.7.0');
+      src: url('./public/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('./public/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./public/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./public/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./public/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
       font-weight: normal;
       font-style: normal;
     }
@@ -138,9 +138,9 @@
 </head>
 
 <body>
-  <script src="./javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
-  <script src="./javascripts/jquery.lazy.min.js" type="text/javascript"></script>
-  <script src="./javascripts/jquery.lazy.youtube.min.js" type="text/javascript"></script>
+  <script src="./public/javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="./public/javascripts/jquery.lazy.min.js" type="text/javascript"></script>
+  <script src="./public/javascripts/jquery.lazy.youtube.min.js" type="text/javascript"></script>
   <script nonce="2726c7f26c">
     $(function () {
       $("iframe[data-src]").Lazy();
@@ -148,8 +148,8 @@
   </script>
   <div class="topnav" id="myTopnav">
     <a href="/" class="active">Home</a>
-    <a href="/support">Support</a>
-    <a href="/policy">Policy</a>
+    <a href="./views/support.html">Support</a>
+    <a href="./views/policy.html">Policy</a>
     <a id="mobileicon" class="icon">
       <i class="fa fa-bars"></i>
     </a>
@@ -157,14 +157,14 @@
   <br>
   <div class="container-fluid">
    <picture>
-     <source srcset="/images/logo/logo1676.jpg" media="(min-width: 2400px)" />
-     <source srcset="/images/logo/logo1221.jpg" media="(min-width: 1800px)" />
-     <source srcset="/images/logo/logo930.jpg" media="(min-width: 1200px)" />
-     <source srcset="/images/logo/logo652.jpg" media="(min-width: 1000px)" />
-     <source srcset="/images/logo/logo482.jpg" media="(min-width: 600px)" />
-     <source srcset="/images/logo/logo384.jpg" media="(min-width: 400px)" />
-     <source srcset="/images/logo/logo345.jpg" media="(min-width: 330px)" />
-     <img class="center" alt="App Logo" src="/images/logo/logo290.jpg" />
+     <source srcset="./public/images/logo/logo1676.jpg" media="(min-width: 2400px)" />
+     <source srcset="./public/images/logo/logo1221.jpg" media="(min-width: 1800px)" />
+     <source srcset="./public/images/logo/logo930.jpg" media="(min-width: 1200px)" />
+     <source srcset="./public/images/logo/logo652.jpg" media="(min-width: 1000px)" />
+     <source srcset="./public/images/logo/logo482.jpg" media="(min-width: 600px)" />
+     <source srcset="./public/images/logo/logo384.jpg" media="(min-width: 400px)" />
+     <source srcset="./public/images/logo/logo345.jpg" media="(min-width: 330px)" />
+     <img class="center" alt="App Logo" src="./public/images/logo/logo290.jpg" />
    </picture>
     <hr>
     <p class="centerText"><a target="_blank" href="https://apps.apple.com/ca/app/filterfun/id1478511423">Open App Store Preview page</a></p>
@@ -176,27 +176,27 @@
         <br>
         <br>
         <picture>
-          <source srcset="/images/info/info823.jpg" media="(min-width: 2400px)" />
-          <source srcset="/images/info/info595.jpg" media="(min-width: 1800px)" />
-          <source srcset="/images/info/info450.jpg" media="(min-width: 1200px)" />
-          <source srcset="/images/info/info311.jpg" media="(min-width: 1000px)" />
-          <source srcset="/images/info/info226.jpg" media="(min-width: 600px)" />
-          <source srcset="/images/info/info384.jpg" media="(min-width: 400px)" />
-          <source srcset="/images/info/info345.jpg" media="(min-width: 330px)" />
-          <img alt="Info" src="/images/info/info290.jpg" />
+          <source srcset="./public/images/info/info823.jpg" media="(min-width: 2400px)" />
+          <source srcset="./public/images/info/info595.jpg" media="(min-width: 1800px)" />
+          <source srcset="./public/images/info/info450.jpg" media="(min-width: 1200px)" />
+          <source srcset="./public/images/info/info311.jpg" media="(min-width: 1000px)" />
+          <source srcset="./public/images/info/info226.jpg" media="(min-width: 600px)" />
+          <source srcset="./public/images/info/info384.jpg" media="(min-width: 400px)" />
+          <source srcset="./public/images/info/info345.jpg" media="(min-width: 330px)" />
+          <img alt="Info" src="./public/images/info/info290.jpg" />
         </picture>
       </div>
       <br>
       <div class="col-sm-8">
         <picture alt="3 panel example">
-          <source srcset="/images/3panel/3panel1676.jpg" media="(min-width: 2400px)" />
-          <source srcset="/images/3panel/3panel1221.jpg" media="(min-width: 1800px)" />
-          <source srcset="/images/3panel/3panel930.jpg" media="(min-width: 1200px)" />
-          <source srcset="/images/3panel/3panel652.jpg" media="(min-width: 1000px)" />
-          <source srcset="/images/3panel/3panel482.jpg" media="(min-width: 600px)" />
-          <source srcset="/images/3panel/3panel384.jpg" media="(min-width: 400px)" />
-          <source srcset="/images/3panel/3panel345.jpg" media="(min-width: 330px)" />
-          <img alt="3 panel example" src="/images/3panel/3panel290.jpg" />
+          <source srcset="./public/images/3panel/3panel1676.jpg" media="(min-width: 2400px)" />
+          <source srcset="./public/images/3panel/3panel1221.jpg" media="(min-width: 1800px)" />
+          <source srcset="./public/images/3panel/3panel930.jpg" media="(min-width: 1200px)" />
+          <source srcset="./public/images/3panel/3panel652.jpg" media="(min-width: 1000px)" />
+          <source srcset="./public/images/3panel/3panel482.jpg" media="(min-width: 600px)" />
+          <source srcset="./public/images/3panel/3panel384.jpg" media="(min-width: 400px)" />
+          <source srcset="./public/images/3panel/3panel345.jpg" media="(min-width: 330px)" />
+          <img alt="3 panel example" src="./public/images/3panel/3panel290.jpg" />
         </picture>
         <h1>Example videos (XS)</h1>
         <table>
@@ -318,14 +318,14 @@ Mono. Color
         </table>
         <h1>Screenshots</h1>
         <picture>
-          <source srcset="/images/15panel/15panel1676.jpg" media="(min-width: 2400px)" />
-          <source srcset="/images/15panel/15panel1221.jpg" media="(min-width: 1800px)" />
-          <source srcset="/images/15panel/15panel930.jpg" media="(min-width: 1200px)" />
-          <source srcset="/images/15panel/15panel652.jpg" media="(min-width: 1000px)" />
-          <source srcset="/images/15panel/15panel482.jpg" media="(min-width: 600px)" />
-          <source srcset="/images/15panel/15panel384.jpg" media="(min-width: 400px)" />
-          <source srcset="/images/15panel/15panel345.jpg" media="(min-width: 330px)" />
-          <img alt="15 panel example" src="/images/15panel/15panel290.jpg" />
+          <source srcset="./public/images/15panel/15panel1676.jpg" media="(min-width: 2400px)" />
+          <source srcset="./public/images/15panel/15panel1221.jpg" media="(min-width: 1800px)" />
+          <source srcset="./public/images/15panel/15panel930.jpg" media="(min-width: 1200px)" />
+          <source srcset="./public/images/15panel/15panel652.jpg" media="(min-width: 1000px)" />
+          <source srcset="./public/images/15panel/15panel482.jpg" media="(min-width: 600px)" />
+          <source srcset="./public/images/15panel/15panel384.jpg" media="(min-width: 400px)" />
+          <source srcset="./public/images/15panel/15panel345.jpg" media="(min-width: 330px)" />
+          <img alt="15 panel example" src="./public/images/15panel/15panel290.jpg" />
         </picture>
       </div>
     </div>
@@ -334,8 +334,8 @@ Mono. Color
       <p class="footie">© 2019 Luvai Hassanali</p>
     </footer>
   </div>
-  <script src="./javascripts/bootstrap.min.js" type="text/javascript"></script>
-  <script src="./javascripts/index.js" type="text/javascript"></script>
+  <script src="./public/javascripts/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./public/javascripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>
